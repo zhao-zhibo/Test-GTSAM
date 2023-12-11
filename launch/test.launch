@@ -1,0 +1,14 @@
+<launch>
+
+    <arg name="project" default="test_gtsam"/>
+    
+    <!-- Parameters -->
+    <rosparam file="$(find test_gtsam)/config/params.yaml" command="load" />
+
+    <node pkg="$(arg project)" type="$(arg project)_testGtsam"      name="$(arg project)_testGtsam"       output="screen"     respawn="true"/>
+    
+    <node pkg="$(arg project)" type="$(arg project)_curveFitting"      name="$(arg project)_curveFitting"       output="screen"     respawn="true"/>
+
+    <!-- <node pkg="$(arg project)" type="$(arg project)_gaussNewton"      name="$(arg project)_gaussNewton"       output="screen"     respawn="true"/> -->
+
+</launch>
