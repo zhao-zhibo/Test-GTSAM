@@ -24,6 +24,7 @@ testGtsam.cpp  |**复现gtsam**官网中的`BetweenFactor`，特别是自定义�
 这个cpp是`curveFitting.cpp`，其中结合了`matplotlibcpp.h`，`matplotlibcpp.h`是安装的c++画图的依赖库，方便画图使用，安装参考[链接](https://blog.csdn.net/kkbca/article/details/134421442)，这里面和1.1节中一样，都是对曲线进行拟合，因此它的雅克比矩阵也是现成的，具体可以参考下面代码中的`evaluateError`函数。可以见代码`curveFitting.cpp`。
 最终拟合后的曲线如下图所示：
 ![拟合效果](https://img-blog.csdnimg.cn/direct/d4375feea7bf437cb66e1bf65361ce54.png#pic_center)
+
 在写自定义因子的时候踩了两个坑，分别在1.31.和1.3.2中进行介绍。
 ### 1.3.1 Eigen返回错误
 第一个错误是在上述代码中的 ` // return gtsam::Vector1(val - yi); // 返回值为残差`，这样写会返回错误，
