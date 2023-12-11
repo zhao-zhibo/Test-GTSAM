@@ -3,7 +3,7 @@
 ```
 mkdir src
 cd src
-git clone "对应的git"
+git clone git@github.com:zhao-zhibo/test_gtsam.git
 catkin_make
 ```
 # 1  高斯牛顿法与gtsam学习心得
