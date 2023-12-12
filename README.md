@@ -1,4 +1,4 @@
-[CSDN链接](https://blog.csdn.net/zzb714121/article/details/134921839?spm=1001.2014.3001.5502)，详情见csdn链接，我的这个csdn链接写的更加详细一些。如有问题，请提issue或者在csdn评论区交流。
+[CSDN链接](https://blog.csdn.net/zzb714121/article/details/134921839?spm=1001.2014.3001.5502)，详情见csdn链接，我的这个csdn链接写的更加详细一些。如有问题，请提issue或者在csdn评论区交流。代码中保留了lio-sam中的四个cpp，但是把这四个cpp的编译删除了，主要是为了和自己写的gtsam做对比，方便学习。
 代码运行逻辑：
 ```
 mkdir src
