@@ -4,6 +4,7 @@
 mkdir src
 cd src
 git clone git@github.com:zhao-zhibo/test_gtsam.git
+cd ..
 catkin_make
 ```
 # 1  高斯牛顿法与gtsam学习心得
